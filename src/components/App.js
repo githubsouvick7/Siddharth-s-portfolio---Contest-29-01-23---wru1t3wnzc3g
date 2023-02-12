@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect, NavLink, Link } from 'react-router-dom';
-import Info from './Info';
+import Info from './info';
 import Blog from './Blog';
 import Home from './Home';
 const App = () => {
@@ -13,10 +13,10 @@ const App = () => {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path='/blog'>
+          <Route path='/Blog'>
             <Blog />
           </Route>
-          <Route path='/Info'>
+          <Route path='/info'>
             <Info />
           </Route>
         </Switch>
