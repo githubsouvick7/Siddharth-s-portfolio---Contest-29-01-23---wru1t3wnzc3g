@@ -1,11 +1,10 @@
 import React from 'react'
 import '../styles/App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect, NavLink, Link } from 'react-router-dom';
-import Info from './info';
+import Info from './Info';
 import Blog from './Blog';
 import Home from './Home';
 const App = () => {
-
   return (
     <div id="main">
       <Router>
@@ -16,7 +15,7 @@ const App = () => {
           <Route path='/Blog'>
             <Blog />
           </Route>
-          <Route path='/info'>
+          <Route path='/Info'>
             <Info />
           </Route>
         </Switch>
